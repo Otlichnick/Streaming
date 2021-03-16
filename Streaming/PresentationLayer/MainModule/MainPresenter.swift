@@ -96,7 +96,7 @@ extension MainPresenter: PlayerManagerDelegate {
 // MARK: - Private methods
 extension MainPresenter {
     private func fillDataSource() {
-        dataSource = [(MainDataSource(section: "Sapmle Title", rows: [textStub()]))]
+        dataSource = [(MainDataSource(section: "Sample Title", rows: [textStub()]))]
     }
     
     private func textStub() -> String {

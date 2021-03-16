@@ -16,18 +16,6 @@ final class DefaultCoordinator {
         window.rootViewController = rootModule
         window.makeKeyAndVisible()
     }
-    
-    private var navigation: UINavigationController {
-        get {
-            let navigation = UINavigationController()
-            navigation.navigationBar.prefersLargeTitles = true
-            navigation.navigationBar.standardAppearance.largeTitleTextAttributes = [
-                .foregroundColor: UIColor.white
-            ]
-            
-            return navigation
-        }
-    }
 }
 
 // MARK: - Private methods

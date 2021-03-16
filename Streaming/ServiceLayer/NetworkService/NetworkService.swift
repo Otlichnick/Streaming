@@ -66,7 +66,7 @@ extension NetworkService {
             }
             
             guard let data = data else {
-                result(.failure(Errors.parce))
+                result(.failure(Errors.parse))
                 return
             }
             
@@ -83,13 +83,13 @@ extension NetworkService {
 // MARK: - Errors
 extension NetworkService {
     enum Errors: LocalizedError {
-        case parce
+        case parse
         case retrieveData
         case requestComposing
         
         var errorDescription: String? {
             switch self {
-            case .parce:
+            case .parse:
                 return "Failed to parce JSON"
             case .retrieveData:
                 return "Failed to retrieve data"
